@@ -21,15 +21,16 @@ imageElement.setAttribute("alt", `This is ${fullName}. He is a student at BYU-Id
 
 /* Step 5 - Array */
 
-let favoriteFoods = ["Pizza", "Tacos", "Pasta"];
+let favoriteFoods = ["Pizza", "Tacos", "Pasta", "Hamburgers", "Gummy Bears"];
 foodElement.innerHTML = favoriteFoods;
 document.getElementById("food").innerHtml = favoriteFoods;
-let newfood = "Cheesecake";
-favoriteFoods.push(newfood);
+let newFood = "Cheesecake";
+favoriteFoods.push(newFood);
 foodElement.innerHTML += `<br>${favoriteFoods}`;
 favoriteFoods.shift();
-foodElement.innerHTML -= `<br>${favoriteFoods}`;
-
+foodElement.innerHTML += `<br>${favoriteFoods}`;
+favoriteFoods.splice(3,1);
+foodElement.innerHTML += `<br>${favoriteFoods}`;
 
 
 
