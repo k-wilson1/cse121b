@@ -34,12 +34,12 @@ const getTemples = async () => {
 }};
 
 /* reset Function */
-const reset = () => {
+function reset() {
     templesElement.innerHTML = "";
 };
 
 /* filterTemples Function */
-const filterTemples = (temples) =>{
+function filterTemples(temples) {
     reset();
 
     const filter = document.getElementById("filtered").value;
