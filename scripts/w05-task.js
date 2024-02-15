@@ -65,3 +65,14 @@ getTemples();
 
 /* Event Listener */
 document.getElementById("filtered").addEventListener("change",() => { filterTemples(templeList) });
+
+
+
+function displayJokes(jokes) {
+    jokeText.innerHTML = "";
+    jokes.forEach(joke => {
+        const jokeElement = document.createElement("p");
+        jokeElement.textContent = joke.joke;
+        jokeText.appendChild(jokeElement);
+    });
+}
