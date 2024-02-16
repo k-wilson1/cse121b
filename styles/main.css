@@ -320,6 +320,7 @@ footer {
     padding: 3rem;
     display: flex;
     flex-direction: column;
+    background-color: purple;
 }
 .container p{
     font-size: 2rem;
